@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('http://fonts.googleapis.com/css?family=Oswald:400,700');
+@font-face {
+	font-family: 'entypo';
+	src: url('entypo/entypo.eot');
+	src: url('entypo/entypo.eot?#iefix') format('embedded-opentype'), url('entypo/entypo.woff') format('woff'), url('entypo/entypo.ttf') format('truetype'), url('entypo/entypo.svg#svgFontName') format('svg');
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 62.5%;
+	line-height: 1;
+	color: #414141;
+	margin: 45px 15px;
+	background: #ececec url(../images/bg.png);
+}
+br {
+	display: block;
+	margin: 10px 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+input, textarea {
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+strong, b {
+	font-weight: bold;
+}
+em, i {
+	font-style: italic;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
+h1 {
+	font-size: 3.1em;
+	line-height: 1.55em;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Oswald', 'Helvetica', Arial, sans-serif;
+	margin-bottom: 35px;
+	color: #595959;
+}
+.entypo {
+	font-family: 'entypo', sans-serif;
+}
+.wrapper {
+	display: block;
+	max-width: 850px;
+	padding: 45px 35px;
+	margin: 0 auto;
+	background: #fff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.center {
+	width: 20%;
+	margin: 0 auto;
+}
+.centerbig {
+	width: 40%;
+	margin: 0 auto;
+}
+a.dlbtn {
+	display: inline-block;
+	position: relative;
+	height: 45px;
+	line-height: 40px;
+	overflow: hidden;
+	padding: 0 30px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #c0c0c0;
+	background-color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	border: 3px solid #ddd;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	transition: all .4s;
+}
+a.dlbtn:hover, a.dlbtn:focus {
+	color: #fff;
+	padding-right: 90px;
+	background-color: #5381bf;
+	border-color: #5381bf;
+}
+a.dlbtn .details {
+	position: absolute;
+	line-height: 11px;
+	top: 4px;
+	right: -15px;
+	opacity: 0;
+	background: #49668c;
+	color: #fff;
+	text-align: center;
+	padding: 3px 4px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: right .4s linear, opacity .25s;
+	-moz-transition: right .4s linear, opacity .25s;
+	transition: right .4s linear, opacity .25s;
+}
+a.dlbtn .details .size {
+	display: block;
+	padding-top: 3px;
+}
+a.dlbtn:hover .details, a.dlbtn:focus .details {
+	right: 8px;
+	opacity: 1;
+}
+a.dlbtn.big {
+	height: 115px;
+	line-height: 115px;
+	padding: 0 80px;
+	font-size: 26px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+a.dlbtn.big:hover, a.dlbtn.big:focus {
+	padding-right: 160px;
+}
+a.dlbtn.big .details {
+	top: 10px;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 6px 15px;
+}
+a.dlbtn.big:hover .details, a.dlbtn.big:focus .details {
+	right: 15px;
+}
+a.dlbtn .dlicon {
+	display: block;
+	font-size: 55px;
+	line-height: 30px;
+}
+@media screen and (max-width: 620px) {
+	h1 {
+		font-size: 2.2em;
+	}
+	.center {
+		width: 30%;
+	}
+	.centerbig {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 2.2em;
+	}
+	.center {
+		margin-left: 0;
+	}
+	.centerbig {
+		margin-left: -20px;
+	}
+	a.dlbtn.big {
+		padding: 0 70px;
+	}
+	a.dlbtn.big:hover, a.dlbtn.big:focus {
+		padding-right: 150px;
+	}
+}
