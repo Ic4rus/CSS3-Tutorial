@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: url(../images/ubuntu.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container {
+	position: relative;
+	width: 150px;
+	height: 35px;
+	margin: 560px auto 0;	
+	color: #fff;
+	opacity: .4;
+	font-family: Ubuntu;	
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+}
+
+.leftarrow, .leftarrow2 {
+	position: absolute;
+	top: 0;
+	left: -20px;
+}
+
+.rightarrow, .rightarrow2 {
+	position: absolute;
+	top: 0;
+	right: -20px;
+}
+
+.leftarrow {
+	-webkit-animation: movefadeleft1 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.leftarrow2 {
+	-webkit-animation: movefadeleft2 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.rightarrow {
+	-webkit-animation: movefaderight1 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.rightarrow2 {
+	-webkit-animation: movefaderight2 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes movefadeleft1 {
+	0% {
+		left: -20px;
+		opacity: 1;
+	}	
+	20% {
+		left: -100px;
+		opacity: 0;
+	}
+	90% {
+		left: -100px;
+		opacity: 0;
+	}
+	100% {
+		left: -20px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes movefadeleft2 {
+	0% {
+		left: -20px;
+		opacity: 0;
+	}	
+	30% {
+		left: -20px;
+		opacity: 1;
+	}
+	50% {
+		left: -100px;
+		opacity: 0;
+	}
+	100% {
+		left: -100px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes movefaderight2 {
+	0% {
+		right: -20px;
+		opacity: 1;
+	}	
+	20% {
+		right: -100px;
+		opacity: 0;
+	}
+	90% {
+		right: -100px;
+		opacity: 0;
+	}
+	100% {
+		right: -20px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes movefaderight1 {
+	0% {
+		right: -20px;
+		opacity: 0;
+	}	
+	30% {
+		right: -20px;
+		opacity: 1;
+	}
+	50% {
+		right: -100px;
+		opacity: 0;
+	}
+	100% {
+		right: -100px;
+		opacity: 0;
+	}
+}
