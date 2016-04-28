@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: #222;
+}
+
+div {
+	width: 200px;
+	height: 240px;
+	line-height: 60px;
+	background: #eee;
+	text-align: center;
+	font-size: 480px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+div:before {
+	content: '---';
+	display: block;
+}
+
+div:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: solid 80px transparent;
+	border-left: none;
+	border-top: none;
+	background: #222;
+	border-bottom: solid 80px #ccc;
+}
